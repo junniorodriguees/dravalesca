@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dra. Valesca Cassiano | Divórcio e Pensão Alimentícia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Montserrat', sans-serif;
+background:#FFFFFF;
+color:#000000;
+line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+background:#1c1c1c;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-family:'Playfair Display', serif;
+color:#FFFFFF;
+font-size:20px;
+letter-spacing:3px;
+}
+
+.top-whatsapp{
+background:#25D366;
+color:#FFFFFF;
+padding:14px 26px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:8px;
+box-shadow:0 6px 20px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.top-whatsapp:hover{
+background:#1EBE5D;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(to bottom, #1a1a1a 0%, #7a7a7a 100%);
+padding:120px 20px 100px 20px;
+text-align:center;
+color:#FFFFFF;
+}
+
+.hero h1{
+font-family:'Playfair Display', serif;
+font-size:70px;
+font-weight:500;
+margin-bottom:40px;
+}
+
+.hero .btn-main{
+background:#25D366;
+color:#FFFFFF;
+padding:18px 40px;
+border-radius:40px;
+text-decoration:none;
+font-size:20px;
+font-weight:600;
+display:inline-block;
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+transition:0.3s;
+}
+
+.hero .btn-main:hover{
+background:#1EBE5D;
+}
+
+/* FOTO */
+
+.photo-section{
+padding:80px 0;
+display:flex;
+justify-content:center;
+}
+
+.photo-box{
+background:#F2F2F2;
+padding:20px;
+border-radius:10px;
+width:95%;
+max-width:800px;
+text-align:center;
+}
+
+.photo-box img{
+width:100%;
+max-width:650px;
+border-radius:6px;
+object-fit:cover;
+}
+
+/* SECTION */
+
+.section{
+padding:90px 8%;
+text-align:center;
+}
+
+.section:nth-child(even){
+background:#F7F7F7;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:40px;
+font-weight:500;
+}
+
+.highlight{
+font-family:'Playfair Display', serif;
+color:#7a7a7a;
+font-weight:600;
+}
+
+.big-number{
+color:#7a7a7a;
+font-weight:700;
+font-size:20px;
+}
+
+.content-text{
+max-width:900px;
+margin:0 auto 40px auto;
+}
+
+.list{
+margin-top:20px;
+line-height:2;
+}
+
+.feature-title{
+font-family:'Playfair Display', serif;
+color:#7a7a7a;
+font-weight:600;
+font-size:24px;
+margin-top:50px;
+margin-bottom:15px;
+}
+
+/* GOOGLE REVIEWS REAL STYLE */
+
+.reviews-container{
+max-width:900px;
+margin:0 auto;
+text-align:left;
+}
+
+.google-review{
+background:#fff;
+border:1px solid #dadce0;
+border-radius:12px;
+padding:20px;
+margin-bottom:20px;
+font-family:'Roboto', sans-serif;
+}
+
+.review-top{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+}
+
+.review-profile{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.review-profile img{
+width:48px;
+height:48px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.review-name{
+font-weight:500;
+font-size:15px;
+color:#202124;
+}
+
+.review-level{
+font-size:13px;
+color:#5f6368;
+}
+
+.review-stars{
+color:#fbbc04;
+font-size:14px;
+margin:4px 0;
+}
+
+.review-date{
+font-size:13px;
+color:#5f6368;
+}
+
+.google-logo{
+width:20px;
+opacity:0.8;
+}
+
+.review-text{
+margin-top:12px;
+font-size:14px;
+color:#202124;
+line-height:1.6;
+}
+
+/* BOTÃO WHATSAPP SECUNDÁRIO */
+
+.btn-whatsapp-section{
+margin-top:50px;
+text-align:center;
+}
+
+.btn-whatsapp-section .btn-whatsapp{
+background:#25D366;
+color:#FFFFFF;
+padding:16px 36px;
+border-radius:40px;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+display:inline-block;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.btn-whatsapp-section .btn-whatsapp:hover{
+background:#1EBE5D;
+}
+
+/* BOTÃO WHATSAPP FLUTUANTE */
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#FFFFFF;
+padding:16px 24px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+z-index:999;
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+background:#1EBE5D;
+}
+
+footer{
+background:#1c1c1c;
+color:#CCCCCC;
+padding:60px 20px;
+text-align:center;
+}
+
+footer strong{
+color:#FFFFFF;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:42px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Dra. Valesca Cassiano</div>
+<a href="https://wa.me/5511940165873" class="top-whatsapp">
+Atendimento Gratuito
+</a>
+</header>
+
+<section class="hero">
+<h1>Atendimento<br>Imediato</h1>
+<a href="https://wa.me/5511940165873" class="btn-main">
+Fale AGORA pelo WhatsApp
+</a>
+</section>
+
+<section class="photo-section">
+<div class="photo-box">
+<img src="FOTO_DA_ADVOGADA_AQUI.jpg" alt="Dra. Valesca Cassiano">
+</div>
+</section>
+
+<section class="section">
+
+<h2>
+Advogada Especializada em 
+<span class="highlight">DIVÓRCIO</span> e 
+<span class="highlight">PENSÃO ALIMENTÍCIA</span>
+</h2>
+
+<div class="content-text">
+
+<p>
+Valesca Cassiano Silva Vaccari é advogada atuante na área de Direito de Família, pós-graduada na especialidade, com mais de 11 anos de experiência na condução de processos de divórcio e pensão alimentícia. Seu sólido acervo jurídico e atuação estratégica garantem soluções eficazes, seguras e juridicamente fundamentadas.
+</p>
+
+<p>
+Oferece soluções assertivas e personalizadas para cada caso. Entre em contato agora e experimente uma abordagem humanizada, técnica e eficiente.
+</p>
+
+<p style="margin-top:30px;font-weight:600;">
+Já ajudou mais de <span class="big-number">1.000</span> clientes com:
+</p>
+
+<div class="list">
+✓ Divórcio litigioso e consensual<br>
+✓ Partilha de bens<br>
+✓ Guarda de filhos<br>
+✓ Pensão alimentícia<br>
+✓ Dissolução de união estável<br>
+✓ E mais...
+</div>
+
+<p style="margin-top:30px;">
+Agende uma consulta gratuita com nossa advogada especialista em direito de família e entenda o nosso método de sucesso que nos faz ter nota alta de satisfação.
+</p>
+
+<h2 style="margin-top:80px;">Nossos Diferenciais</h2>
+
+<div class="feature-title">Experiência</div>
+<p>Preparada para a administração da justiça e excelência na defesa dos interesses das partes em juízo.</p>
+
+<div class="feature-title">On-line</div>
+<p>Foco em eficiência e precisão, somos parte instrumental do sucesso dos nossos clientes, por meio de aconselhamento jurídico.</p>
+
+<div class="feature-title">Parcelamento</div>
+<p>Nossos honorários podem ser parcelados em até 12x sem juros, através de boleto bancário ou cartão de crédito.</p>
+
+<div class="feature-title">Estratégia</div>
+<p>Utilizamos estratégias vencedoras comprovadas pelos nossos atendimentos e resoluções.</p>
+
+<div class="feature-title">Acervo</div>
+<p>Possuímos experiência e grande acervo jurídico de alta eficácia na resolução dos casos.</p>
+
+<div class="feature-title">Pessoalidade</div>
+<p><strong>Atendimento personalizado</strong></p>
+<p>Aqui, cada cliente é único. Suas histórias e objetivos são importantes para nós.</p>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Depoimentos de clientes atendidos com excelência</h2>
+
+<div class="reviews-container">
+
+<div class="google-review">
+<div class="review-top">
+<div class="review-profile">
+<img src="cliente1.jpg" alt="Enésia Silva">
+<div>
+<div class="review-name">Enésia Silva</div>
+<div class="review-level">Local Guide · 12 avaliações</div>
+<div class="review-stars">★★★★★</div>
+<div class="review-date">há 2 meses</div>
+</div>
+</div>
+<img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+</div>
+<div class="review-text">
+Advogada excelente, estou maravilhada com tudo, desde o atendimento até a solução do meu caso. Simplesmente amei ela!
+</div>
+</div>
+
+<div class="google-review">
+<div class="review-top">
+<div class="review-profile">
+<img src="cliente2.jpg" alt="Mércia Rodrigues">
+<div>
+<div class="review-name">Mércia Rodrigues</div>
+<div class="review-level">8 avaliações</div>
+<div class="review-stars">★★★★★</div>
+<div class="review-date">há 3 meses</div>
+</div>
+</div>
+<img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+</div>
+<div class="review-text">
+Foi o caso mais rápido que eu resolvi na justiça e com certeza nada disso seria possível sem a Dra. Valesca! Impossível não se apaixonar por ela, vendo-a trabalhar com tanta paixão! Obrigadaaaa!
+</div>
+</div>
+
+<div class="google-review">
+<div class="review-top">
+<div class="review-profile">
+<img src="cliente3.jpg" alt="Lucas Lima">
+<div>
+<div class="review-name">Lucas Lima</div>
+<div class="review-level">5 avaliações</div>
+<div class="review-stars">★★★★★</div>
+<div class="review-date">há 1 mês</div>
+</div>
+</div>
+<img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+</div>
+<div class="review-text">
+Essa advogada é diferenciada! Não estou comentando só pelo fato de ter dado tudo certo, pois disso eu já tinha certeza desde o primeiro momento que ela me passou toda essa confiança em seu trabalho. O que eu não poderia mesmo é ser ingrato e perder a oportunidade de vir aqui externar toda a minha gratidão. Eu estava muito aflito e ansioso, até nisso ela conseguiu me acalmar, com toda essa segurança que ela passa e esse profissionalismo absurdo! Muito obrigado, doutora!
+</div>
+</div>
+
+</div>
+
+<div class="btn-whatsapp-section">
+<a href="https://wa.me/5511940165873" class="btn-whatsapp">
+Fale com nossa advogada via WhatsApp
+</a>
+</div>
+
+</section>
+
+<a href="https://wa.me/5511940165873" class="whatsapp-float">
+Fale AGORA com a advogada
+</a>
+
+<footer>
+<p><strong>Dra. Valesca Cassiano</strong></p>
+<p>Valesca Cassiano Silva Vaccari</p>
+<p>OAB/SP 317.259</p>
+<p>Atendimento Online</p>
+<p>WhatsApp: +55 11 94016-5873</p>
+
+<p style="margin-top:20px;font-size:13px;">
+© 2026 - Todos os direitos reservados.
+</p>
+</footer>
+
+</body>
+  </html>
